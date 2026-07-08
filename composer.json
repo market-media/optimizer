@@ -1,0 +1,17 @@
+{
+  "name": "market-media/optimizer",
+  "description": "O Optimizer facilita salvar como favoritos as tags do seu site, o Open Graph e o Twitter Card.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MarketMedia\\Optimizer\\": "src"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
