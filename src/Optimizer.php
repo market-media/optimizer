@@ -64,6 +64,8 @@ class Optimizer extends MetaTags
      */
     public function keywords(string $keywords): Optimizer
     {
+        $this->keywords = $keywords;
+
         $this->buildMeta("name", ["keywords" => $this->filter($keywords)]);
         return $this;
     }
