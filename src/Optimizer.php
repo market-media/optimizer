@@ -217,4 +217,12 @@ class Optimizer extends MetaTags
 
         return $this;
     }
+
+    /**
+     * @return object|null
+     */
+    public function getData()
+    {
+        return $this->data();
+    }
 }
