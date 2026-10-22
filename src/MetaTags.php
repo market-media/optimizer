@@ -2,7 +2,6 @@
 
 namespace MarketMedia\Optimizer;
 
-use JetBrains\PhpStorm\Pure;
 use SimpleXMLIterator;
 use stdClass;
 
@@ -14,8 +13,8 @@ class MetaTags
     /** @var SimpleXMLIterator */
     protected SimpleXMLIterator $meta;
 
-    /** @var stdClass */
-    protected stdClass $data;
+    /** @var stdClass|null */
+    protected ?stdClass $data = null;
 
     /** @var array */
     protected array $tags = ["property" => "og", "name" => "twitter"];
@@ -66,7 +65,7 @@ class MetaTags
      * @param string|null $image
      * @return object|null
      */
-    public function data(string $title = null, string $desc = null, string $url = null, string $image = null): ?object
+    public function data(?string $title = null, ?string $desc = null, ?string $url = null, ?string $image = null): ?object
     {
         (!$title ?: $this->title = $title);
         (!$desc ?: $this->description = $desc);

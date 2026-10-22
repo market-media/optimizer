@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'coffeecode/optimizer',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => 'market-media/optimizer',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'fd92c0576237dd870aeb44d9b1223b0deb8ed297',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'coffeecode/optimizer' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        'market-media/optimizer' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'fd92c0576237dd870aeb44d9b1223b0deb8ed297',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

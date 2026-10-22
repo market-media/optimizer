@@ -31,6 +31,27 @@ composer require market-media/optimizer
 
 ## Documentação
 
+### PHP 8.5
+
+Requer PHP 8.5 ou superior na série 8.x e a extensão SimpleXML. O Composer
+deve ser executado com esse interpretador; versões anteriores do PHP deixam de ser aceitas.
+
+Os parâmetros opcionais de `data()`, `publisher()`, `twitterCard()` e `facebook()`
+aceitam `null` explicitamente, eliminando a depreciação de parâmetros implicitamente
+nuláveis introduzida no PHP 8.4. As chamadas existentes com `null` continuam válidas.
+`data()` e `getData()` retornam `null` antes de qualquer dado ser definido.
+
+A revisão das depreciações e incompatibilidades do PHP 8.5 não identificou outros
+usos afetados no código da biblioteca. Os dados personalizados continuam sendo
+armazenados em `stdClass` por `__set()`, sem criar propriedades dinâmicas no Optimizer.
+
+Referências: [depreciações do PHP 8.4](https://www.php.net/manual/en/migration84.deprecated.php),
+[depreciações do PHP 8.5](https://www.php.net/manual/en/migration85.deprecated.php) e
+[incompatibilidades do PHP 8.5](https://www.php.net/manual/en/migration85.incompatible.php).
+
+Execute `composer test` para validar as APIs públicas, incluindo parâmetros nulos,
+geração das tags e execução do exemplo. O teste trata avisos e depreciações como erros.
+
 Para mais detalhes sobre como usar o optimizer, veja a pasta de exemplo com detalhes no diretório do componente
 
 #### @optimize

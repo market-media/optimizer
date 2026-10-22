@@ -4,13 +4,16 @@
   "type": "library",
   "license": "MIT",
   "require": {
-    "php": ">=8.2",
+    "php": "^8.5",
     "ext-simplexml": "*"
   },
   "autoload": {
     "psr-4": {
       "MarketMedia\\Optimizer\\": "src"
     }
+  },
+  "scripts": {
+    "test": "@php -d error_reporting=-1 tests/compatibility.php"
   },
   "minimum-stability": "stable",
   "prefer-stable": true

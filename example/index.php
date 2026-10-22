@@ -6,7 +6,7 @@
     <?php
     require __DIR__ . "/../vendor/autoload.php";
 
-    $op = new \CoffeeCode\Optimizer\Optimizer();
+    $op = new \MarketMedia\Optimizer\Optimizer();
     echo $op
         ->optimize(
             "Optimizer Happy and @CoffeeCode",
@@ -16,9 +16,7 @@
         )
         ->publisher(
             "upinside",
-            "robsonvleite",
-            "107305124528362639842",
-            "103958419096641225872"
+            "robsonvleite"
         )
         ->twitterCard(
             "@robsonvleite",

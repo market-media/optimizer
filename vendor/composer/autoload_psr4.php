@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CoffeeCode\\Optimizer\\' => array($baseDir . '/src'),
+    'MarketMedia\\Optimizer\\' => array($baseDir . '/src'),
 );

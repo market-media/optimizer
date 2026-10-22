@@ -124,7 +124,7 @@ class Optimizer extends MetaTags
      * @param string|null $fbAuthor
      * @return Optimizer
      */
-    public function publisher(string $fbPage, string $fbAuthor = null): Optimizer
+    public function publisher(string $fbPage, ?string $fbAuthor = null): Optimizer
     {
         $this->buildMeta(
             "property",
@@ -175,7 +175,7 @@ class Optimizer extends MetaTags
      * @param string|null $card
      * @return Optimizer
      */
-    public function twitterCard(string $creator, string $site, string $domain, string $card = null): Optimizer
+    public function twitterCard(string $creator, string $site, string $domain, ?string $card = null): Optimizer
     {
         $prefix = "twitter";
         $card = ($card ?? "summary_large_image");
@@ -200,7 +200,7 @@ class Optimizer extends MetaTags
      * @param array|null $admins
      * @return Optimizer
      */
-    public function facebook(string $appId = null, array $admins = null): Optimizer
+    public function facebook(?string $appId = null, ?array $admins = null): Optimizer
     {
         if ($appId) {
             $fb = $this->meta->addChild("meta");
